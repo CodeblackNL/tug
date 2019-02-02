@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\src\TugDSC.Abstractions\TugDSC.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\..\src\TugDSC.Abstractions\TugDSC.Abstractions.csproj" />
     <ProjectReference Include="..\Sample.TestExt.Thingy\Sample.TestExt.Thingy.csproj" />
   </ItemGroup>
 

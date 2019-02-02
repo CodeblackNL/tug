@@ -1,9 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="$(MSBuildThisFileDirectory)/../../TugDSC.common.props"
-      Condition="'$(TugDSC_common_props)' == ''" />
-  <Import Project="$(MSBuildThisFileDirectory)/../../TugDSC.sharedasm.props"
-      Condition="'$(TugDSC_sharedasm_props)' == ''" />
+  <Import Project="$(MSBuildThisFileDirectory)/../../TugDSC.common.props" Condition="'$(TugDSC_common_props)' == ''" />
+  <Import Project="$(MSBuildThisFileDirectory)/../../TugDSC.sharedasm.props" Condition="'$(TugDSC_sharedasm_props)' == ''" />
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -22,9 +20,9 @@
     -       https://weblog.west-wind.com/posts/2017/Sep/26/A-few-notes-on-creating-Class-Libraries-for-ASPNET-Core
     -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.0.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.0.4" />
   </ItemGroup>
 
   <ItemGroup>
