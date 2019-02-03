@@ -57,7 +57,7 @@ namespace TugDSC.Server.WebAppHost
         #endregion -- Constants --
 
         #region -- Fields --
-        
+
         // Always points to the current logger for this class.
         // Upon construction, we initialize this to a temporary <i>pre-logger</i>
         // that is hard-coded to simply write to the console but eventually we replace
@@ -159,7 +159,7 @@ namespace TugDSC.Server.WebAppHost
             WebHost = BuildWebHost(HostingConfig);
 
             Run(WebHost);
-        }        
+        }
 
         protected static void PrintBanner()
         {
@@ -172,10 +172,10 @@ namespace TugDSC.Server.WebAppHost
             var asmInfo = FileVersionInfo.GetVersionInfo(asm.Location);
 
             // The copyright rune may not print so well on console
-            var copyright = asmInfo.LegalCopyright?.Replace("©", "(C)"); 
+            var copyright = asmInfo.LegalCopyright?.Replace("©", "(C)");
 
             Console.WriteLine($"TugDSC Server WebAppHost v{asmVers} -- starting up");
-          //Console.WriteLine(asmInfo.ProductName);
+            //Console.WriteLine(asmInfo.ProductName);
             Console.WriteLine(copyright);
             Console.WriteLine();
         }
@@ -266,7 +266,7 @@ namespace TugDSC.Server.WebAppHost
                 // and useStartupErrors config settings
                 .UseIISIntegration()
                 .UseStartup<Startup>();
-            
+
             return hostBuilder.Build();
         }
 
@@ -323,7 +323,7 @@ namespace TugDSC.Server.WebAppHost
             base.OnStarted();
             _logger.LogInformation("Service started.");
         }
-        
+
         protected override void OnStopping()
         {
             _logger.LogInformation("Received 'STOP' request");

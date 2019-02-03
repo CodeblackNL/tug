@@ -26,8 +26,8 @@
     <PackageReference Include="System.Composition.Convention" Version="1.1.0" />
     -->
     <PackageReference Include="Microsoft.Composition" Version="1.0.31" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.0.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="2.2.0" />
 
     <!-- These have to be explicitly referenced so we don't get a version
          downgrade error during publish to a specific target RID -->
